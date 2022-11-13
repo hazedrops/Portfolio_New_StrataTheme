@@ -14,6 +14,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="assets/css/images/myLogo.ico" />
+
+		<!-- Script to send email -->
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -91,7 +94,7 @@
 						<p>Feel free to contact me if you have any further questions.</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="#">
+								<form method="post">
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
 										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
@@ -99,7 +102,7 @@
 									</div>
 								</form>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" value="Send Message" id="sendBtn" /></li>
 								</ul>
 							</div>
 							<div class="col-4 col-12-small">
@@ -115,7 +118,8 @@
 									</li> -->
 									<li>
 										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">hazedrops@hotmail.com</a>
+										<a href="mailto:hazedrops@hotmail.com">hazedrops@hotmail.com</a>
+										<a href="mailto:hazedrops1206@gmail.com">hazedrops1206@gmail.com</a>
 									</li>
 								</ul>
 							</div>
@@ -446,8 +450,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
-						<li><a href="https://github.com/hazedrops" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/yoonjeong-choi-b57887220/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/hazedrops" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/yoonjeong-choi-b57887220/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 						<li><a href="mailto:hazedrops@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
@@ -465,5 +469,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/year.js"></script>
 
+			
+			<!-- Script to send email -->
+			<script tupe="module" src="assets/js/sendEmail.js"></script>
 	</body>
 </html>
