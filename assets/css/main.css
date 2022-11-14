@@ -2033,16 +2033,27 @@ input, select, textarea {
 
 		.icon.solid:hover::before,
 		.icon.solid:hover::after {
-			color: #eea76c;
+			color: #fbede1;
 		}
 
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
-		.icon.brands:hover::before,
-		.icon.solid:hover::after {
-			color: #eea76c;
+		.icon.brands:hover::before {
+			color: #fbede1;
+		}
+
+		.icon.solid.fa-chevron-right:hover::before,
+		.icon.solid.fa-chevron-right:hover::after {
+			color: #E36C0A;
+		}
+
+		.icon.solid.fa-home:hover::before,
+		.icon.solid.fa-home:hover::after,
+		.icon.solid.fa-envelope:hover::before,
+		.icon.solid.fa-envelope:hover::after {
+			color: #7c7c7c;
 		}
 
 /* Image */
@@ -2059,7 +2070,7 @@ input, select, textarea {
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			background: url("images/overlay.png");
+			/* background: url("images/overlay.png"); */
 			border-radius: 0.35em;
 			content: '';
 			display: block;
@@ -2141,6 +2152,11 @@ input, select, textarea {
 
 			.image.fit img {
 				width: 100%;
+				height: 50vh;
+				min-height: 300px;
+				box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+				/* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+				/* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
 			}
 
 		.image.avatar {
@@ -2573,6 +2589,7 @@ input, select, textarea {
 
 		.work-item h3 {
 			font-size: 1em;
+			font-weight: 600;
 			margin: 0 0 0.5em 0;
 		}
 
@@ -2580,6 +2597,21 @@ input, select, textarea {
 			font-size: 0.8em;
 			line-height: 1.5em;
 			margin: 0;
+		}
+
+		.work-item a:hover {
+			color: #E36C0A !important;
+		}
+
+		.work-item .gitLink,
+		.work-item .gitLink:visited,
+		.work-item .gitLink:hover,
+		.work-item .gitLink:active {
+			color: #E36C0A !important;
+		}		
+
+		.work-item .gitLink span {
+			font-size: .8em;
 		}
 
 /* Header */
@@ -2603,10 +2635,10 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg1.jpg");
-		background-position: top left,							top left;
+		background-image: url("images/overlay.png"), url("../../images/bg3.jpg");
+		background-position: top left,							bottom right;
 		background-repeat: repeat,								no-repeat;
-		background-size: auto,								150%;
+		background-size: auto,							150%;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
@@ -2966,6 +2998,7 @@ input, select, textarea {
 			.poptrox-popup:hover .closer:hover {
 				opacity: 1.0;
 			}
+	
 
 /* Touch */
 
